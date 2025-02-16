@@ -1,0 +1,11 @@
+<div class="container">
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Search by name" class="search-input">
+    <h2>Users List</h2>
+  
+    <ul>
+      <li *ngFor="let user of filteredUsers">
+        <strong>{{ user.name }}</strong> - {{ user.address }}
+      </li>
+    </ul>
+  </div>
+  
